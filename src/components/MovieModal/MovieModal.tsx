@@ -52,11 +52,7 @@ export default function MovieModal({ movie, onClose }: MovieModalProps) {
         >
           &times;
         </button>
-        <img
-          src={imageUrl + movie.backdrop_path}
-          alt={movie.title}
-          className={css.image}
-        />
+        <img src={imageUrl} alt={movie.title} className={css.image} />
         <div className={css.content}>
           <h2>{movie.title}</h2>
           <p>{movie.overview}</p>
